@@ -5,13 +5,16 @@ class BlobClipperRight extends CustomClipper<Path> {
   Path getClip(Size size) {
     Path path = Path();
 
-    path.lineTo(size.width * 0.5, 0);
-    path.quadraticBezierTo(size.width, 0, size.width,
-        size.height * 0.9); 
-    path.lineTo(size.width, size.height * 0.8); 
-    path.quadraticBezierTo(size.width, size.height, size.width * 0.4,
-        size.height * 0.99); 
-    path.lineTo(0, size.height * 0.95); 
+    path.moveTo(size.width * 0.5, 0);
+
+    path.quadraticBezierTo(size.width, 0, size.width, size.height * 0);
+
+    path.quadraticBezierTo(
+        size.width, size.height, size.width * 0.95, size.height * 0.96);
+
+    path.quadraticBezierTo(0, size.height, 0, size.height * 0.7);
+
+    path.quadraticBezierTo(0, 0, size.width * 0.5, 0);
 
     return path;
   }

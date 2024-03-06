@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
         children: [
           SizedBox(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.6,
+            height: MediaQuery.of(context).size.height * 0.7,
             child: Stack(children: [
               Positioned(
                 right: 0,
@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
                   clipper: BlobClipperRight(),
                   child: Container(
                     color: Theme.of(context).primaryColor,
-                    height: MediaQuery.of(context).size.height * 0.6,
+                    height: MediaQuery.of(context).size.height * 0.7,
                     width: MediaQuery.of(context).size.width * 0.6,
                   ),
                 ),

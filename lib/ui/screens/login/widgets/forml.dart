@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:splash_prac/ui/widgets/custom_button.dart';
+import 'package:splash_prac/ui/widgets/custom_text_button.dart';
 import 'package:splash_prac/ui/widgets/custom_text_field.dart';
 
 class FormL extends StatefulWidget {
@@ -24,6 +25,20 @@ class _FormLState extends State<FormL> {
           height: 20,
         ),
         const CustomTextField("Password"),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.008,
+        ),
+        Row(
+          children: [
+            TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Forgot Password",
+                  textAlign: TextAlign.left,
+                  style: Theme.of(context).textTheme.labelMedium,
+                ))
+          ],
+        ),
         const SizedBox(
           height: 60,
         ),
