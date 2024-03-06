@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:splash_prac/ui/styles/waves_painter.dart';
 
 class MyWave extends StatelessWidget {
@@ -13,19 +14,14 @@ class MyWave extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * 0.55,
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          const Text(
+          Text(
             "Welcome",
-            style: TextStyle(
-                fontSize: 50, fontWeight: FontWeight.w400, color: Colors.white),
+            style: Theme.of(context).textTheme.displayLarge,
           ),
           const SizedBox(
             height: 20,
           ),
-          const Text("to",
-              style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white)),
+          Text("to", style: Theme.of(context).textTheme.displayLarge),
           const SizedBox(
             height: 20,
           ),
@@ -50,7 +46,7 @@ class MyWave extends StatelessWidget {
                 angle: 0.10,
                 child: Text(
                   "App",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: 50,
                       fontWeight: FontWeight.w400,
                       color: Theme.of(context).secondaryHeaderColor),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:splash_prac/ui/screens/login/login.dart';
 import 'package:splash_prac/ui/screens/register/register.dart';
 import 'package:splash_prac/ui/widgets/custom_button.dart';
+import 'package:splash_prac/ui/widgets/cutom_page_route.dart';
 
 class ProccedWith extends StatelessWidget {
   const ProccedWith({super.key});
@@ -19,14 +20,12 @@ class ProccedWith extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            CustomButton("Login", const Color.fromARGB(255, 218, 174, 174), () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Login()));
+            CustomButton("Login", Theme.of(context).primaryColor, () {
+              Navigator.of(context).push(CustomPageRoute(child: const Login()));
             }),
-            CustomButton("Register", const Color.fromARGB(255, 218, 174, 174),
-                () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Register()));
+            CustomButton("Register", Theme.of(context).primaryColor, () {
+              Navigator.of(context)
+                  .push(CustomPageRoute(child: const Register()));
             })
           ],
         ),

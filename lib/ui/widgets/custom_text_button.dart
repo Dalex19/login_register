@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String _name;
@@ -11,7 +12,7 @@ class CustomTextButton extends StatelessWidget {
           Navigator.pop(context);
         },
         child: Text(
-          style: const TextStyle(fontSize: 25, color: Colors.black54),
+          style: GoogleFonts.poppins(fontSize: 25, color: Colors.black54),
           _name,
         ));
   }

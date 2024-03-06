@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class ToopBar extends StatelessWidget {
- final String _name;
+  final String _name;
 
   const ToopBar(this._name, {Key? key}) : super(key: key);
 
@@ -23,9 +23,8 @@ class ToopBar extends StatelessWidget {
           ]),
       child: Text(
         _name,
-        style: const TextStyle(
-            fontSize: 40,
-            color: Color.fromARGB(255, 218, 174, 174)),
+        style: GoogleFonts.poppins(
+            fontSize: 40, color: const Color.fromARGB(255, 218, 174, 174)),
       ),
     );
   }
