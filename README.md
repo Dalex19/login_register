@@ -1,16 +1,15 @@
-# splash_prac
+# Maquetación con Flutter
 
-A new Flutter project.
+Práctica de maquetación con flutter el cual me base del siguiente [diseño](https://dribbble.com/shots/18577798-App-Login-Design).
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+Pantallas de login y registro, asi como una splash screen.
 
-A few resources to get you started if this is your first Flutter project:
+### Uso de:
+- Widgets Reutilizables
+- ThemeData
+- CustomClipper (Para hacer los blobs en las pantallas)
+- PsysicalModal (Para las sombras a widgets que no tienen directamente una propiedad boxShadow)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Vistas
