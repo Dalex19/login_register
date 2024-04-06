@@ -13,3 +13,6 @@ Pantallas de login y registro, asi como una splash screen.
 - PsysicalModal (Para las sombras a widgets que no tienen directamente una propiedad boxShadow)
 
 ### Vistas
+
+https://github.com/Dalex19/login_register/assets/50632756/e29eff40-652f-4d54-8db9-e6c0ea9eabd7
+
